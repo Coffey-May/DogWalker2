@@ -32,7 +32,7 @@ namespace DogWalker2.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] Int32? neighborhoodId)
         {
             using (SqlConnection conn = Connection)
             {
@@ -40,7 +40,15 @@ namespace DogWalker2.Controllers
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"SELECT d.Id, d.Name, d.Breed, d.OwnerId, o.Name AS OwnerName, o.NeighborhoodId, o.Address, o.Phone, d.Notes FROM Dog d
-                                        LEFT JOIN Owner o ON d.OwnerId = o.Id";
+                                        LEFT JOIN Owner o ON d.OwnerId = o.Id
+                                        WHERE 1 = 1";
+
+                    if (neighborhoodId != null)
+                    {
+                        cmd.CommandText += " AND NeighborhoodId = @neighborhoodId";
+                        cmd.Parameters.Add(new SqlParameter("@neighborhoodId", neighborhoodId));
+                    }
+
                     SqlDataReader reader = cmd.ExecuteReader();
                     List<Dog> dogs = new List<Dog>();
 
@@ -50,6 +58,7 @@ namespace DogWalker2.Controllers
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
                             Name = reader.GetString(reader.GetOrdinal("Name")),
+                            Breed = reader.GetString(reader.GetOrdinal("Breed")),
                             OwnerId = reader.GetInt32(reader.GetOrdinal("OwnerId")),
                             Owner = new Owner
                             {
@@ -58,11 +67,12 @@ namespace DogWalker2.Controllers
                                 Address = reader.GetString(reader.GetOrdinal("Address")),
                                 NeighborhoodId = reader.GetInt32(reader.GetOrdinal("NeighborhoodId")),
                                 Phone = reader.GetString(reader.GetOrdinal("Phone"))
-                            },
-                            Breed = reader.GetString(reader.GetOrdinal("Breed")),
-                            Notes = reader.GetString(reader.GetOrdinal("Notes")),
+                            }
                         };
-
+                        if (!reader.IsDBNull(reader.GetOrdinal("Notes")))
+                        {
+                            dog.Notes = reader.GetString(reader.GetOrdinal("Notes"));
+                        }
                         dogs.Add(dog);
                     }
                     reader.Close();
@@ -71,6 +81,7 @@ namespace DogWalker2.Controllers
                 }
             }
         }
+
 
         [HttpGet("{id}", Name = "GetDog")]
         public async Task<IActionResult> Get([FromRoute] int id)

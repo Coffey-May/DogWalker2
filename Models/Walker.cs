@@ -10,5 +10,8 @@ namespace DogWalker2.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public int NeighborhoodId { get; set; }
+        public List<Walks> Walks { get; set; }
+
     }
+
 }
