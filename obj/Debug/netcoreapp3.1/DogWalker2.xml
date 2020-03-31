@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DogWalker2</name>
+    </assembly>
+    <members>
+        <member name="M:DogWalker2.Controllers.DogController.Get(System.Nullable{System.Int32})">
+            <summary>
+            This method provides all dogs
+            </summary>
+            <param name="neighborhoodId">A valid neighborhood ID</param>
+            <returns>reurns all dogs in a neighborhood</returns>
+        </member>
+    </members>
+</doc>

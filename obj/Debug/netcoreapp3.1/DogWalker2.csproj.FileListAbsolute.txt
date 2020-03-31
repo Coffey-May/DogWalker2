@@ -8,8 +8,6 @@ C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWa
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.RazorTargetAssemblyInfo.cache
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\staticwebassets\DogWalker2.StaticWebAssets.Manifest.cache
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\staticwebassets\DogWalker2.StaticWebAssets.xml
-C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.csproj.CoreCompileInputs.cache
-C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\bin\Debug\netcoreapp3.1\DogWalker2.deps.json
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\bin\Debug\netcoreapp3.1\DogWalker2.runtimeconfig.json
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\bin\Debug\netcoreapp3.1\DogWalker2.runtimeconfig.dev.json
@@ -39,3 +37,12 @@ C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWa
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.dll
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.pdb
 C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.genruntimeconfig.cache
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.csproj.CoreCompileInputs.cache
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\bin\Debug\netcoreapp3.1\DogWalker2.xml
+C:\Users\Coffey\source\repos\DogWalker2\DogWalker2\obj\Debug\netcoreapp3.1\DogWalker2.xml
